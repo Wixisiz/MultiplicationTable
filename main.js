@@ -33,19 +33,19 @@ function createTable() {
     Error.innerText = "";
 
     // Error: Not a Number
-    if (isNaN(minCol) || minCol == "") {
+    if (isNaN(minCol)) {
         Error.innerText = "Error: Minimum Column is Not a Number";
         return;
     }
-    if (isNaN(maxCol) || maxCol == "") {
+    if (isNaN(maxCol)) {
         Error.innerText = "Error: Maximum Column is Not a Number";
         return;
     }
-    if (isNaN(minRow) || minRow == "") {
+    if (isNaN(minRow)) {
         Error.innerText = "Error: Minimum Row is Not a Number";
         return;
     }
-    if (isNaN(maxRow) || maxRow == "") {
+    if (isNaN(maxRow)) {
         Error.innerText = "Error: Maximum Row is Not a Number";
         return;
     }
