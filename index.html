@@ -1,0 +1,41 @@
+<!--
+File: index.html
+GUI Assignment: HW 3 Creating an Interactive Dynamic Table
+Senny Lu, UMass Lowell Computer Science, senny_lu@student.uml.edu 
+Copyright (c) 2025 by Senny. All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated by SL on June 16th, 2025 at 2:30 PM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="css/tablestyle.css" rel="stylesheet">
+    <title>Dynamic Multiplication Table</title>
+</head>
+<body>
+    <h1>Dynamic Multiplication Table</h1>
+
+    <!--Form element with ids and names for the inputs for ease of access in javascript file-->
+    <form id="info">
+        <label for="minimumColumn">Minimum Column Value (-50 to 50):</label><br>
+        <input type="text" id="minimumColumn" name="minimumColumn" value="0"><br>
+        <label for="maximumColumn">Maximum Column Value (-50 to 50):</label><br>
+        <input type="text" id="maximumColumn" name="maximumColumn" value="5"><br>
+        <label for="minimumRow">Minimum Row Value (-50 to 50):</label><br>
+        <input type="text" id="minimumRow" name="minimumRow" value="0"><br>
+        <label for="maximumRow">Maximum Row Value (-50 to 50):</label><br>
+        <input type="text" id="maximumRow" name="maximumRow" value="5"><br><br>
+        <label for="Generate" id="Error"></label><br><br>
+        <input type="submit" id="Generate" name="Generate" value="Generate">
+        <input type="submit" id="Clear" value="Clear">
+    </form>
+    <!--Div tableContainer is used for javascript to generate the table by inserting table into div
+        and used to clear table by clearing div.-->
+    <div id="tableContainer"></div>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
